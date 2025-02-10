@@ -1,0 +1,107 @@
+Onglets principaux
+Toutes les tâches
+Affiche toutes les tâches, peu importe leur état ou catégorie.
+
+En cours
+Filtre les tâches en fonction de leur état (non complétées). Permet à l'utilisateur de voir ce qui reste à faire.
+
+Terminées
+Affiche les tâches qui ont été marquées comme complètes.
+
+Catégories
+Permet à l'utilisateur de voir ses tâches triées par catégorie. Par exemple : Travail, Personnel, Urgent, À long terme.
+
+Urgentes
+Permet de visualiser directement toutes les tâches marquées comme urgentes.
+
+Recherche
+Une barre de recherche qui filtre les tâches par titre, description, catégorie, ou autre critère pertinent.
+
+Profil
+Pour voir et modifier les informations de l'utilisateur. Cela pourrait inclure une photo de profil, l'email, le mot de passe, etc.
+
+Statistiques / Historique
+Un onglet pour voir des graphiques ou des données sur l'évolution de tes tâches : nombre de tâches complétées chaque semaine, temps estimé vs réel, etc.
+
+Récompenses / Gamification
+Cet onglet peut afficher les réalisations de l'utilisateur, des badges gagnés, des niveaux atteints, ou des récompenses virtuelles (comme des points ou des trophées) pour encourager l'accomplissement des tâches.
+
+Fonctionnalités supplémentaires
+Création de tâches
+Formulaire de création de tâches avec les champs :
+
+Titre
+Description
+Catégorie (Travail, Personnel, Urgent, etc.)
+Priorité (Facile, Moyenne, Difficile)
+Date d'échéance
+Statut (En cours / Complété)
+Système de priorité
+Permet d'ajouter une priorité à chaque tâche. Exemple : Facile, Moyenne, Difficile.
+
+Notifications
+Notifications push ou par email pour rappeler à l'utilisateur les tâches urgentes ou les dates limites qui approchent.
+
+Sous-tâches / Check-list
+Permet à l'utilisateur de diviser une tâche principale en sous-tâches. Cela peut être une liste à cocher pour chaque sous-tâche.
+
+Estimation du temps
+Permet à l'utilisateur d'ajouter une estimation de temps pour accomplir chaque tâche. Cela pourrait également être lié aux statistiques.
+
+Partage de tâches
+Permet à un utilisateur de partager des tâches avec d'autres utilisateurs. Idéal pour un usage collaboratif, si tu choisis d'ajouter des fonctionnalités multi-utilisateur à l'avenir.
+
+Rappels / Alertes
+Des rappels automatiques pour les tâches urgentes ou les tâches avec des dates d'échéance.
+
+Modification en masse
+Permet de sélectionner plusieurs tâches et de les marquer comme complètes, ou de les déplacer vers une autre catégorie.
+
+Mode sombre
+Une option dans les paramètres pour activer un thème sombre. Cela pourrait être une fonctionnalité agréable pour les utilisateurs.
+
+Historique des tâches supprimées
+Un onglet ou une fonctionnalité pour voir les tâches supprimées récemment, au cas où l'utilisateur voudrait les restaurer.
+
+Récompenses & Points
+Gamification : Accorde des points pour chaque tâche terminée. Attribue des récompenses ou des badges après avoir accompli un certain nombre de tâches ou après avoir respecté des délais.
+
+Challenges / Objectifs
+Ajoute des défis : par exemple, « Compléter 5 tâches cette semaine » ou « Ne pas laisser de tâche en retard pendant 3 jours ». Récompense avec des badges ou points.
+
+Suivi de productivité
+Affiche des graphiques de productivité, comme le nombre de tâches complétées par semaine, mois, etc. Affiche les tâches les plus urgentes ou importantes à accomplir.
+
+Mode Focus
+Permet à l'utilisateur de se concentrer sur une tâche à la fois, sans distractions. Cela peut être un minuteur Pomodoro intégré, où l'utilisateur peut travailler sur une tâche pendant 25 minutes avant de faire une pause.
+
+Badges & Récompenses
+Attribue des badges en fonction de certains critères : « Tâches complètes cette semaine », « Catégories terminées », « Nombre d'heures travaillées », etc.
+
+Mise en avant des tâches importantes
+Permet de marquer certaines tâches comme "Importantes" ou "Prioritaires" pour qu'elles soient affichées en premier.
+
+Import / Export
+Permet d'importer ou d'exporter des listes de tâches via des fichiers CSV ou Excel, idéal pour les utilisateurs qui souhaitent sauvegarder ou partager leurs tâches avec d'autres applications.
+
+Notes personnelles sur les tâches
+Permet à l'utilisateur de laisser des notes supplémentaires sur une tâche (par exemple, des remarques sur l'avancement, ou des réflexions).
+
+Mode collaborative (à venir)
+À ajouter plus tard, lorsque tu souhaites étendre l'application. Permet à plusieurs utilisateurs de gérer des tâches en groupe, de se répartir des tâches et de collaborer en temps réel.
+
+Gamification : Comment l'intégrer ?
+Niveaux
+L'utilisateur peut monter en niveau en accomplissant des tâches. Par exemple, après 10 tâches complétées, il passe au niveau 2, etc.
+
+Récompenses virtuelles
+Pour chaque tâche accomplie, l'utilisateur gagne des points, des badges ou des trophées. Par exemple :
+
+Tâches complètes : +10 points
+Catégories complètes : +30 points
+Délais respectés : +20 points
+Classements
+Crée des classements basés sur la productivité de l'utilisateur. Cela pourrait être un classement hebdomadaire, mensuel ou global, où les utilisateurs se comparent entre eux (si tu choisis de permettre un aspect social).
+
+Défis quotidiens / hebdomadaires
+Défis comme « Compléter 5 tâches aujourd'hui » ou « Marquer 3 tâches comme terminées cette semaine » avec une récompense à la clé.

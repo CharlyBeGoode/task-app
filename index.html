@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application de gestion de tâches</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>Gestion des tâches</h1>
+        <div class="button-container">
+          <button class="new-task-button">Ajouter une tâche</button>
+          <button class="modify-category-button">Modifier catégories</button>
+          <button class="settings-button">Paramètres</button>
+        </div>
+      </header>
+
+      <div class="new-task-container">
+        <button class="close-new-task">✖</button>
+        <h2>Nouvelle Tâche</h2>
+        <input type="text" class="new-title" placeholder="Titre de la tâche" />
+        <textarea
+          class="new-description"
+          placeholder="Description de la tâche"
+        ></textarea>
+        <select class="new-category">
+          <option value="work">Travail</option>
+          <option value="personal">Personnel</option>
+          <option value="other">Autre</option>
+        </select>
+        <input type="color" class="category-color" value="#ffcccb" />
+        <button class="add-task">Ajouter</button>
+      </div>
+
+      <div class="settings-container" style="display: none">
+        <button class="close-settings">X</button>
+        <h2>Paramètres</h2>
+        <!-- Contenu vide pour l'instant -->
+      </div>
+
+      <div class="category-list">
+        <button class="close-categories">X</button>
+        <h2>Catégories existantes</h2>
+        <ul class="category-ul">
+          <!-- Liste des catégories -->
+        </ul>
+        <div class="category-actions">
+          <input
+            type="text"
+            class="new-category-input"
+            style="display: block"
+            placeholder="Nouvelle catégorie"
+          />
+          <button class="add-category-button">Ajouter catégorie</button>
+        </div>
+      </div>
+
+      <div class="task-filters">
+        <button class="all-tab">Toutes</button>
+        <button class="in-progress-tab">En cours</button>
+        <button class="completed-tab">Terminées</button>
+      </div>
+
+      <div class="tasklist">
+        <!-- Les tâches seront ajoutées ici -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

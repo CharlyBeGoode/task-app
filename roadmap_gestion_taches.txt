@@ -1,0 +1,56 @@
+
+Roadmap pour l'application de gestion de tâches :
+
+1. Configuration de l'environnement back-end :
+   - Connexion à MongoDB avec `mongoose`.
+   - Définition des modèles `User` et `Task`.
+   - Création des routes pour l'inscription, la connexion, et la gestion des tâches (création, récupération, mise à jour, suppression).
+   - Gestion de l'authentification avec JWT (incluant la gestion du middleware pour protéger les routes).
+
+2. Implémentation de la logique d'authentification :
+   - Créer les routes `/api/register` et `/api/login`.
+   - Créer un système de génération et de vérification des tokens JWT pour sécuriser l'accès aux routes des tâches.
+   - Ajouter un middleware `authMiddleware` pour vérifier les tokens JWT dans les requêtes aux routes des tâches.
+
+3. Création des routes pour les tâches :
+   - Implémenter les routes pour :
+     - Créer une tâche (`POST /api/tasks`).
+     - Récupérer les tâches d'un utilisateur (`GET /api/tasks`).
+     - Mettre à jour une tâche (`PUT /api/tasks/:id`).
+     - Supprimer une tâche (`DELETE /api/tasks/:id`).
+
+4. Tests des routes back-end :
+   - Utiliser un outil comme Postman ou Insomnia pour tester les routes API (inscription, connexion, création des tâches, etc.).
+   - Vérifier que l'authentification fonctionne bien et que les utilisateurs peuvent créer et gérer leurs tâches.
+
+5. Ajout de la sécurité :
+   - Mettre en place une gestion plus avancée de la clé JWT via des variables d'environnement (`process.env.SECRET_KEY`).
+   - Ajouter des mesures de sécurité pour prévenir des attaques comme l'injection de code ou les attaques par force brute (par exemple, limiter les tentatives de connexion).
+
+6. Front-end : Créer l'interface utilisateur :
+   - Initialiser le front-end :
+     - Utiliser HTML, CSS et JavaScript (ou un framework comme React si tu veux aller plus loin) pour créer l'interface utilisateur.
+   - Gestion de l'authentification côté client :
+     - Créer les formulaires d'inscription et de connexion.
+     - Gérer le stockage du token JWT côté client (par exemple, dans `localStorage` ou `sessionStorage`).
+   - Gestion des tâches côté client :
+     - Afficher la liste des tâches de l'utilisateur connecté.
+     - Implémenter les fonctionnalités pour ajouter, modifier et supprimer des tâches via des appels API au back-end.
+
+7. Intégration du front-end et back-end :
+   - Connecter les formulaires d'inscription et de connexion au back-end via des appels AJAX ou `fetch`.
+   - Créer une gestion des tâches avec des requêtes API pour récupérer, ajouter, modifier et supprimer des tâches.
+
+8. Amélioration de l'expérience utilisateur (UX) :
+   - Ajouter des messages de feedback pour informer l'utilisateur des actions réussies ou des erreurs.
+   - Implémenter des notifications ou des alertes (par exemple, quand une tâche est ajoutée ou supprimée).
+
+9. Test complet et déploiement :
+   - Tester l'application complète (authentification, gestion des tâches).
+   - Corriger les bugs ou améliorer certaines fonctionnalités.
+   - Déployer l'application sur une plateforme comme Heroku, DigitalOcean, ou un autre service cloud.
+
+10. Maintenir et étendre l'application :
+   - Ajouter de nouvelles fonctionnalités si nécessaire, comme la possibilité de classer les tâches, de les marquer comme importantes, ou de les organiser par date d'échéance.
+   - Ajouter des fonctionnalités avancées comme des rappels par email ou notifications push (si tu veux aller plus loin).
+
