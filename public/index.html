@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title-container"><h1>Task App</h1></div>
+      <div class="navbar">
+        <nav>
+          <button class="add-task-btn">Ajouter une tâche</button>
+          <div class="search-bar">
+            <div class="task-search">
+              <input
+                type="text"
+                placeholder="Rechercher uner tâche"
+                class="search-task"
+              />
+              <button class="search-btn">🔍</button>
+            </div>
+            <div class="task-filter">
+              <select name="categoryfilter" class="category-filter">
+                <option value="Personnel">Personnel</option>
+                <option value="Travail">Travail</option>
+                <option value="Ecole">Ecole</option>
+                <option value="Autre">Autre</option>
+              </select>
+              <select name="priority-filter" class="priority-filter">
+                <option value="Toutes">Toutes les priorités</option>
+                <option value="Faible">Faible</option>
+                <option value="Moyenne">Moyenne</option>
+                <option value="Haute">Haute</option>
+                <option value="Critique">Critique</option>
+              </select>
+              <select name="status-filter" class="status-filter">
+                <option value="Tous">Tous les status</option>
+                <option value="Pas commencée">Pas commencées</option>
+                <option value="En cours">En cours</option>
+                <option value="Terminée">Terminées</option>
+              </select>
+              <button class="settings-btn">⚙️</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="settings-container" style="display: none">
+        <button class="settings-close-button">X</button>
+        <aside>
+          <h3>parametres</h3>
+          <ul>
+            <li><button class="main-settings-btn">Generaux</button></li>
+            <li><button class="category-settings-btn">Categories</button></li>
+          </ul>
+        </aside>
+        <div class="category-settings-container">
+          <ul class="category-list"></ul>
+          <input type="text" class="new-category-input" />
+          <input type="color" class="new-category-color" />
+          <button class="add-category-btn">Ajouter</button>
+        </div>
+      </div>
+
+      <div class="new-task-container" style="display: none">
+        <button class="close-add-task-btn" style="display: none">X</button>
+        <div class="title-div">
+          <h3>Titre:</h3>
+          <input
+            type="text"
+            class="new-task-title"
+            placeholder="Titre de la tâche"
+            required
+          />
+        </div>
+        <div class="description-div">
+          <h3>Déscription:</h3>
+          <textarea
+            class="new-task-description"
+            name="new-task-description"
+            placeholder="Description de la tâche"
+            rows="5"
+            cols="33"
+          >
+          </textarea>
+        </div>
+        <div class="new-task-details">
+          <div class="category-div">
+            <h3>Catégorie</h3>
+            <div class="flex">
+              <select
+                name="new-task-category"
+                class="new-task-category"
+              ></select>
+              <button class="new-task-category-btn">⚙️</button>
+            </div>
+          </div>
+          <div class="date-div">
+            <h3>Date butoire (optionnel)</h3>
+            <input type="date" class="new-task-date" placeholder="Date" />
+          </div>
+          <div class="priority-div">
+            <h3>Priorité</h3>
+            <select name="new-task-priority" class="new-task-priority">
+              <option value="Faible">Faible</option>
+              <option value="Moyenne" selected>Moyenne</option>
+              <option value="Haute">Haute</option>
+              <option value="Critique">Critique</option>
+            </select>
+          </div>
+          <div class="status-div">
+            <h3>Statut</h3>
+            <select name="new-task-status" class="new-task-status">
+              <option value="Pas commencée" selected>Pas commencée</option>
+              <option value="En cours">En cours</option>
+              <option value="Terminée">Terminées</option>
+            </select>
+          </div>
+
+          <button class="add-new-task">Ajouter</button>
+        </div>
+      </div>
+
+      <div class="task-list-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Tâches</th>
+              <th></th>
+              <th>Categorie</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Priorité</th>
+              <th>Echéancier</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody class="task-list">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

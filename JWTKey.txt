@@ -1,6 +1,0 @@
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2EzNzFkNmU3ZjhjZDVhN2I1NzZhMzkiLCJpYXQiOjE3Mzg3NjQ3NTgsImV4cCI6MTczODc2ODM1OH0.wXILP1Vw7Ae7DlzzrvCEoZiH42RGO0ddSxmtdyl9bPU
-
-
-
-
-curl -X  POST http://localhost:3000/api/tasks -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2EzN2NiMjYzOWMyNzgxZWNkMDM5NWQiLCJpYXQiOjE3Mzg3Njc1MzgsImV4cCI6MTczODc3MTEzOH0.TpW_6RTqs10XPuveyM9mQVSAIq52xLerDb5GAnJfI14" -d "{\"title\": \"Ma tâche\", \"description\": \"Description de la tâche\", \"category\": \"Personnel\"}"

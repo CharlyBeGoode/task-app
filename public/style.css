@@ -1,0 +1,239 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Titre */
+.title-container {
+  margin-top: 2rem;
+}
+
+/* Navbar */
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.navbar button,
+.navbar input,
+.navbar select {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.add-task-btn {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.search-task {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* New Task Container */
+.new-task-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.new-task-container > div {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.new-task-container input,
+.new-task-container textarea,
+.new-task-container select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-task-container button.add-new-task {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+/* Task List Table */
+.task-list-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+thead {
+  background-color: #f0f0f0;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.close-add-tak-btn {
+  float: right;
+}
+.flex {
+  display: flex;
+}
+
+.settings-container {
+  display: flex;
+}
+
+.settings-btn {
+  cursor: pointer;
+}
+.settings-container {
+  display: flex; /* Utiliser flexbox pour aligner les éléments */
+
+  width: 80%; /* Largeur du conteneur */
+  max-width: 800px; /* Largeur maximale */
+  margin: 20px auto; /* Centrer le conteneur */
+  padding: 20px; /* Espacement interne */
+  background-color: #f9f9f9; /* Couleur de fond */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre */
+}
+
+aside {
+  width: 20%; /* Largeur du aside */
+  padding-right: 20px; /* Espacement à droite */
+}
+
+.category-settings-container {
+  width: 70%; /* Largeur du conteneur des catégories */
+  display: flex;
+  flex-direction: column; /* Aligner les éléments en colonne */
+}
+
+/* Styles pour le titre des paramètres */
+.settings-container h2 {
+  margin-bottom: 20px; /* Espacement en bas */
+  font-size: 24px; /* Taille de la police */
+  color: #333; /* Couleur du texte */
+}
+
+/* Styles pour la liste des catégories */
+.category-list {
+  list-style-type: none; /* Supprimer les puces */
+  padding: 0; /* Supprimer le padding */
+}
+
+/* Styles pour chaque élément de la liste des catégories */
+.category-list li {
+  display: flex; /* Utiliser flexbox pour aligner les éléments */
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Centrer verticalement */
+  padding: 10px; /* Espacement interne */
+  margin: 5px 0; /* Espacement vertical entre les éléments */
+  background-color: #e9ecef; /* Couleur de fond */
+  border-radius: 4px; /* Coins arrondis */
+}
+
+/* Styles pour le bouton de suppression de catégorie */
+.delete-category-btn {
+  background-color: #dc3545; /* Couleur rouge */
+  color: white; /* Couleur du texte */
+  border: none; /* Supprimer la bordure */
+  border-radius: 4px; /* Coins arrondis */
+  padding: 5px 10px; /* Espacement interne */
+  cursor: pointer; /* Curseur pointer */
+}
+
+/* Styles pour le bouton de suppression de catégorie au survol */
+.delete-category-btn:hover {
+  background-color: #c82333; /* Couleur rouge plus foncé au survol */
+}
+
+.category-cell {
+  display: block;
+}
+
+.category-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--category-color, #ccc);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.category-th {
+  padding-left: 0px;
+}
